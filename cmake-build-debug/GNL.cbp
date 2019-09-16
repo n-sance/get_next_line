@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="GNL"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GNL">
+				<Option output="C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/GNL.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 GNL"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GNL/fast">
+				<Option output="C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/GNL.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 GNL/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;C:/Users/pu03523/CLionProjects/GNL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/pu03523/CLionProjects/GNL/libft/ft_putchar.c">
+			<Option target="GNL"/>
+		</Unit>
+		<Unit filename="C:/Users/pu03523/CLionProjects/GNL/libft/ft_putchar_fd.c">
+			<Option target="GNL"/>
+		</Unit>
+		<Unit filename="C:/Users/pu03523/CLionProjects/GNL/libft/ft_putendl.c">
+			<Option target="GNL"/>
+		</Unit>
+		<Unit filename="C:/Users/pu03523/CLionProjects/GNL/libft/ft_putstr.c">
+			<Option target="GNL"/>
+		</Unit>
+		<Unit filename="C:/Users/pu03523/CLionProjects/GNL/libft/ft_putstr_fd.c">
+			<Option target="GNL"/>
+		</Unit>
+		<Unit filename="C:/Users/pu03523/CLionProjects/GNL/libft/ft_strcat.c">
+			<Option target="GNL"/>
+		</Unit>
+		<Unit filename="C:/Users/pu03523/CLionProjects/GNL/libft/ft_strcpy.c">
+			<Option target="GNL"/>
+		</Unit>
+		<Unit filename="C:/Users/pu03523/CLionProjects/GNL/libft/ft_strdup.c">
+			<Option target="GNL"/>
+		</Unit>
+		<Unit filename="C:/Users/pu03523/CLionProjects/GNL/libft/ft_strjoin.c">
+			<Option target="GNL"/>
+		</Unit>
+		<Unit filename="C:/Users/pu03523/CLionProjects/GNL/libft/ft_strlen.c">
+			<Option target="GNL"/>
+		</Unit>
+		<Unit filename="C:/Users/pu03523/CLionProjects/GNL/libft/ft_strsub.c">
+			<Option target="GNL"/>
+		</Unit>
+		<Unit filename="C:/Users/pu03523/CLionProjects/GNL/libft/libft.h">
+			<Option target="GNL"/>
+		</Unit>
+		<Unit filename="C:/Users/pu03523/CLionProjects/GNL/main.c">
+			<Option target="GNL"/>
+		</Unit>
+		<Unit filename="C:/Users/pu03523/CLionProjects/GNL/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
