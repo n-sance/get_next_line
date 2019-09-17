@@ -123,6 +123,33 @@ GNL/fast:
 	$(MAKE) -f CMakeFiles/GNL.dir/build.make CMakeFiles/GNL.dir/build
 .PHONY : GNL/fast
 
+get_next_line.o: get_next_line.c.o
+
+.PHONY : get_next_line.o
+
+# target to build an object file
+get_next_line.c.o:
+	$(MAKE) -f CMakeFiles/GNL.dir/build.make CMakeFiles/GNL.dir/get_next_line.c.o
+.PHONY : get_next_line.c.o
+
+get_next_line.i: get_next_line.c.i
+
+.PHONY : get_next_line.i
+
+# target to preprocess a source file
+get_next_line.c.i:
+	$(MAKE) -f CMakeFiles/GNL.dir/build.make CMakeFiles/GNL.dir/get_next_line.c.i
+.PHONY : get_next_line.c.i
+
+get_next_line.s: get_next_line.c.s
+
+.PHONY : get_next_line.s
+
+# target to generate assembly for a file
+get_next_line.c.s:
+	$(MAKE) -f CMakeFiles/GNL.dir/build.make CMakeFiles/GNL.dir/get_next_line.c.s
+.PHONY : get_next_line.c.s
+
 libft/ft_bzero.o: libft/ft_bzero.c.o
 
 .PHONY : libft/ft_bzero.o
@@ -618,6 +645,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... GNL"
+	@echo "... get_next_line.o"
+	@echo "... get_next_line.i"
+	@echo "... get_next_line.s"
 	@echo "... libft/ft_bzero.o"
 	@echo "... libft/ft_bzero.i"
 	@echo "... libft/ft_bzero.s"

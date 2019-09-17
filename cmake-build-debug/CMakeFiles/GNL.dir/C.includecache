@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/admin/school_21/gnl/get_next_line.c
+get_next_line.h
+/Users/admin/school_21/gnl/get_next_line.h
+
 /Users/admin/school_21/gnl/get_next_line.h
 ../libft/libft.h
 /Users/admin/school_21/libft/libft.h
@@ -20,12 +24,6 @@ string.h
 stdlib.h
 -
 unistd.h
--
-
-/Users/admin/school_21/gnl/main.c
-get_next_line.h
-/Users/admin/school_21/gnl/get_next_line.h
-stdio.h
 -
 
 /Users/admin/school_21/libft/libft.h

@@ -78,6 +78,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/admin/school_21/gnl/get_next_line.c">
+			<Option target="GNL"/>
+		</Unit>
+		<Unit filename="/Users/admin/school_21/gnl/get_next_line.h">
+			<Option target="GNL"/>
+		</Unit>
 		<Unit filename="/Users/admin/school_21/gnl/libft/ft_bzero.c">
 			<Option target="GNL"/>
 		</Unit>

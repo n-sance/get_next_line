@@ -16,6 +16,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/GNL.dir/libft/ft_strdel.c.o"
   "CMakeFiles/GNL.dir/libft/ft_strnew.c.o"
   "CMakeFiles/GNL.dir/libft/ft_memalloc.c.o"
+  "CMakeFiles/GNL.dir/get_next_line.c.o"
   "CMakeFiles/GNL.dir/main.c.o"
   "GNL.pdb"
   "GNL"

@@ -24,6 +24,6 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-int		get_next_line(int const fd, char **line);
+int					get_next_line(int const fd, char **line);
 
 #endif

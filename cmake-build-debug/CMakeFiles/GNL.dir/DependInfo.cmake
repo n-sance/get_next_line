@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/admin/school_21/gnl/get_next_line.c" "/Users/admin/school_21/gnl/cmake-build-debug/CMakeFiles/GNL.dir/get_next_line.c.o"
   "/Users/admin/school_21/gnl/libft/ft_bzero.c" "/Users/admin/school_21/gnl/cmake-build-debug/CMakeFiles/GNL.dir/libft/ft_bzero.c.o"
   "/Users/admin/school_21/gnl/libft/ft_memalloc.c" "/Users/admin/school_21/gnl/cmake-build-debug/CMakeFiles/GNL.dir/libft/ft_memalloc.c.o"
   "/Users/admin/school_21/gnl/libft/ft_memset.c" "/Users/admin/school_21/gnl/cmake-build-debug/CMakeFiles/GNL.dir/libft/ft_memset.c.o"
