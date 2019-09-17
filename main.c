@@ -1,73 +1,87 @@
-
-
-
-# include "libft/libft.h"
-# include <stdlib.h>
-# include <sys/types.h>
-//# include <sys/uio.h>
-# include <unistd.h>
-#include <fcntl.h>
+#include "get_next_line.h"
 #include <stdio.h>
-#define BUFF_SIZE 1
-int		checkerror(int fd, char **str, char **line)
-{
-	if (fd == -1 || line == NULL)
-		return (-1);
-	if (!*str)
-	{
-		if (!(*str = (char*)malloc(sizeof(char) * (BUFF_SIZE + 1))))
-			return (-1);
-	}
-	return (0);
-}
 
-char	*readline(char *str, int fd)
-{
-	char		buff[BUFF_SIZE + 1];
-	int			ret;
 
-	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
-	{
-		buff[ret] = '\0';
-		str = ft_strjoin(str, buff);
-	}
-	return (str);
-}
-
-int		get_next_line(int const fd, char **line)
+static int			ft_check_line(char **stack, char **line)
 {
-	static char	*str;
-	int			i;
-	if (*str)
-		ft_strcpy(*line, str);
-	str = readline(str, fd);
+	char			*tmp_stack;
+	char			*strchr_stack;
+	int				i;
+
 	i = 0;
-	if (str[i])
-	{
-		while (str[i] != '\n' && str[i]) {
-			printf("sdfsdf");
-			i++;
-		}
-		if (i == 0)
-			(*line) = ft_strdup("");
-		else
-		{
-			(*line) = ft_strsub(str, 0, i);
-			str = &str[i + 1];
-		}
-		return (1);
-	}
-	else
-		(*line) = ft_strdup("");
-	return (0);
+	strchr_stack = *stack;
+	while (strchr_stack[i] != '\n')
+		if (!strchr_stack[i++])
+			return (0);
+	tmp_stack = &strchr_stack[i];
+	*tmp_stack = '\0';
+	*line = ft_strdup(*stack);
+	*stack = ft_strdup(tmp_stack + 1);
+	return (1);
 }
-int			main(int ac, char **av) {
-	int fd;
+
+static	int			ft_read_from_file(int fd, char *heap, char **stack, char **line)
+{
+	int				ret;
+	char			*tmp_stack;
+
+	while ((ret = read(fd, heap, BUFF_SIZE)) > 0)
+	{
+		heap[ret] = '\0';
+		if (*stack)
+		{
+			tmp_stack = *stack;
+			*stack = ft_strjoin(tmp_stack, heap);
+			free(tmp_stack);
+			tmp_stack = NULL;
+		}
+		else
+			*stack = ft_strdup(heap);
+		if (ft_check_line(stack, line))
+			break ;
+	}
+	return (ret > 0 ? 1 : ret);
+}
+
+int					get_next_line(int const fd, char **line)
+{
+	static char		*stack[MAX_FD];
+	char			*heap;
+	int				ret;
+	int				i;
+
+	if (!line || (fd < 0 || fd >= MAX_FD) || (read(fd, stack[fd], 0) < 0) \
+		|| !(heap = (char *)malloc(sizeof(char) * BUFF_SIZE + 1)))
+		return (-1);
+	if (stack[fd])
+		if (ft_check_line(&stack[fd], line))
+			return (1);
+	i = 0;
+	while (i < BUFF_SIZE)
+		heap[i++] = '\0';
+	ret = ft_read_from_file(fd, heap, &stack[fd], line);
+	free(heap);
+	if (ret != 0 || stack[fd] == NULL || stack[fd][0] == '\0')
+	{
+		if (!ret && *line)
+			*line = NULL;
+		return (ret);
+	}
+	*line = stack[fd];
+	stack[fd] = NULL;
+	return (1);
+}
+
+
+int main(void)
+{
+	int fd = open("test", O_RDONLY);
 	char *line;
 
-	printf("kljlkj");
-	line = readline(line, 1);
-
-	printf("%s ", line);
-	return(0);
+	while(get_next_line(fd, &line))
+	{
+		ft_putendl(line);
+		free(line);
+	}
+	close(fd);
 }

@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="GNL"/>
+		<Option title="Get_Next_Line-master"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/admin/school_21/gnl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="GNL">
-				<Option output="/Users/admin/school_21/gnl/cmake-build-debug/GNL" prefix_auto="0" extension_auto="0"/>
+			<Target title="Get_Next_Line-master">
+				<Option output="/Users/admin/school_21/gnl/cmake-build-debug/Get_Next_Line-master" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/admin/school_21/gnl/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -51,14 +51,14 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/admin/school_21/gnl/cmake-build-debug/Makefile&quot;  VERBOSE=1 GNL"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/admin/school_21/gnl/cmake-build-debug/Makefile&quot;  VERBOSE=1 Get_Next_Line-master"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/admin/school_21/gnl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/admin/school_21/gnl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/admin/school_21/gnl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="GNL/fast">
-				<Option output="/Users/admin/school_21/gnl/cmake-build-debug/GNL" prefix_auto="0" extension_auto="0"/>
+			<Target title="Get_Next_Line-master/fast">
+				<Option output="/Users/admin/school_21/gnl/cmake-build-debug/Get_Next_Line-master" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/admin/school_21/gnl/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -71,69 +71,51 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/admin/school_21/gnl/cmake-build-debug/Makefile&quot;  VERBOSE=1 GNL/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/admin/school_21/gnl/cmake-build-debug/Makefile&quot;  VERBOSE=1 Get_Next_Line-master/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/admin/school_21/gnl/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/admin/school_21/gnl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/admin/school_21/gnl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/admin/school_21/gnl/libft/ft_bzero.c">
-			<Option target="GNL"/>
-		</Unit>
-		<Unit filename="/Users/admin/school_21/gnl/libft/ft_memalloc.c">
-			<Option target="GNL"/>
-		</Unit>
-		<Unit filename="/Users/admin/school_21/gnl/libft/ft_memset.c">
-			<Option target="GNL"/>
-		</Unit>
 		<Unit filename="/Users/admin/school_21/gnl/libft/ft_putchar.c">
-			<Option target="GNL"/>
+			<Option target="Get_Next_Line-master"/>
 		</Unit>
 		<Unit filename="/Users/admin/school_21/gnl/libft/ft_putchar_fd.c">
-			<Option target="GNL"/>
+			<Option target="Get_Next_Line-master"/>
 		</Unit>
 		<Unit filename="/Users/admin/school_21/gnl/libft/ft_putendl.c">
-			<Option target="GNL"/>
+			<Option target="Get_Next_Line-master"/>
 		</Unit>
 		<Unit filename="/Users/admin/school_21/gnl/libft/ft_putstr.c">
-			<Option target="GNL"/>
+			<Option target="Get_Next_Line-master"/>
 		</Unit>
 		<Unit filename="/Users/admin/school_21/gnl/libft/ft_putstr_fd.c">
-			<Option target="GNL"/>
+			<Option target="Get_Next_Line-master"/>
 		</Unit>
 		<Unit filename="/Users/admin/school_21/gnl/libft/ft_strcat.c">
-			<Option target="GNL"/>
-		</Unit>
-		<Unit filename="/Users/admin/school_21/gnl/libft/ft_strchr.c">
-			<Option target="GNL"/>
+			<Option target="Get_Next_Line-master"/>
 		</Unit>
 		<Unit filename="/Users/admin/school_21/gnl/libft/ft_strcpy.c">
-			<Option target="GNL"/>
-		</Unit>
-		<Unit filename="/Users/admin/school_21/gnl/libft/ft_strdel.c">
-			<Option target="GNL"/>
+			<Option target="Get_Next_Line-master"/>
 		</Unit>
 		<Unit filename="/Users/admin/school_21/gnl/libft/ft_strdup.c">
-			<Option target="GNL"/>
+			<Option target="Get_Next_Line-master"/>
 		</Unit>
 		<Unit filename="/Users/admin/school_21/gnl/libft/ft_strjoin.c">
-			<Option target="GNL"/>
+			<Option target="Get_Next_Line-master"/>
 		</Unit>
 		<Unit filename="/Users/admin/school_21/gnl/libft/ft_strlen.c">
-			<Option target="GNL"/>
-		</Unit>
-		<Unit filename="/Users/admin/school_21/gnl/libft/ft_strnew.c">
-			<Option target="GNL"/>
+			<Option target="Get_Next_Line-master"/>
 		</Unit>
 		<Unit filename="/Users/admin/school_21/gnl/libft/ft_strsub.c">
-			<Option target="GNL"/>
+			<Option target="Get_Next_Line-master"/>
 		</Unit>
 		<Unit filename="/Users/admin/school_21/gnl/libft/libft.h">
-			<Option target="GNL"/>
+			<Option target="Get_Next_Line-master"/>
 		</Unit>
 		<Unit filename="/Users/admin/school_21/gnl/main.c">
-			<Option target="GNL"/>
+			<Option target="Get_Next_Line-master"/>
 		</Unit>
 		<Unit filename="/Users/admin/school_21/gnl/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

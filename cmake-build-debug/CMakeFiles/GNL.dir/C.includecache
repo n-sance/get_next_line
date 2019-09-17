@@ -6,25 +6,33 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/pu03523/CLionProjects/GNL/libft/libft.h
-stdio.h
+/Users/admin/school_21/gnl/get_next_line.h
+../libft/libft.h
+/Users/admin/school_21/libft/libft.h
+sys/types.h
+-
+sys/uio.h
+-
+fcntl.h
+-
+string.h
 -
 stdlib.h
 -
 unistd.h
 -
 
-C:/Users/pu03523/CLionProjects/GNL/main.c
-libft/libft.h
-C:/Users/pu03523/CLionProjects/GNL/libft/libft.h
+/Users/admin/school_21/gnl/main.c
+get_next_line.h
+/Users/admin/school_21/gnl/get_next_line.h
+stdio.h
+-
+
+/Users/admin/school_21/libft/libft.h
+stdio.h
+-
 stdlib.h
 -
-sys/types.h
--
 unistd.h
--
-fcntl.h
--
-stdio.h
 -
 

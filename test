@@ -1,2 +1,0 @@
-first string
-second string
