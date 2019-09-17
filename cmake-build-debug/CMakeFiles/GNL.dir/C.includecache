@@ -11,8 +11,8 @@ get_next_line.h
 /Users/admin/school_21/gnl/get_next_line.h
 
 /Users/admin/school_21/gnl/get_next_line.h
-../libft/libft.h
-/Users/admin/school_21/libft/libft.h
+libft/libft.h
+/Users/admin/school_21/gnl/libft/libft.h
 sys/types.h
 -
 sys/uio.h
@@ -26,11 +26,15 @@ stdlib.h
 unistd.h
 -
 
-/Users/admin/school_21/libft/libft.h
+/Users/admin/school_21/gnl/libft/libft.h
 stdio.h
 -
 stdlib.h
 -
 unistd.h
 -
+
+/Users/admin/school_21/gnl/main.c
+get_next_line.h
+/Users/admin/school_21/gnl/get_next_line.h
 

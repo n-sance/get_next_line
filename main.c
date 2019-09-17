@@ -11,5 +11,6 @@ int main(void)
 		ft_putendl(line);
 		free(line);
 	}
+	free(line);
 	close(fd);
 }

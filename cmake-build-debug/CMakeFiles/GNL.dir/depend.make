@@ -3,7 +3,7 @@
 
 CMakeFiles/GNL.dir/get_next_line.c.o: ../get_next_line.c
 CMakeFiles/GNL.dir/get_next_line.c.o: ../get_next_line.h
-CMakeFiles/GNL.dir/get_next_line.c.o: /Users/admin/school_21/libft/libft.h
+CMakeFiles/GNL.dir/get_next_line.c.o: ../libft/libft.h
 
 CMakeFiles/GNL.dir/libft/ft_bzero.c.o: ../libft/ft_bzero.c
 CMakeFiles/GNL.dir/libft/ft_bzero.c.o: ../libft/libft.h
@@ -57,6 +57,6 @@ CMakeFiles/GNL.dir/libft/ft_strsub.c.o: ../libft/ft_strsub.c
 CMakeFiles/GNL.dir/libft/ft_strsub.c.o: ../libft/libft.h
 
 CMakeFiles/GNL.dir/main.c.o: ../get_next_line.h
+CMakeFiles/GNL.dir/main.c.o: ../libft/libft.h
 CMakeFiles/GNL.dir/main.c.o: ../main.c
-CMakeFiles/GNL.dir/main.c.o: /Users/admin/school_21/libft/libft.h
 

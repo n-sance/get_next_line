@@ -69,24 +69,19 @@ HEADERS = libft.h
 
 OBJECT = $(SOURCES:.c=.o)
 
-$(NAME):
-	$(CC) $(FLAGS) -c $(SOURCES)
-	ar rc $(NAME) $(OBJECT)
-	ranlib $(NAME)
-
-
 all: $(NAME)
 
-$(OBJECT): %.o : %.c libft.h
-	$(CC) $(FLAGS) -c $<
+%.o : %.c libft.h
+	$(CC) -c $(FLAGS) $< -I libft.h
+
+$(NAME): $(OBJECT)
+	@ar rc $@ $^
 
 clean:
 	rm -rf $(OBJECT)
 
-
 fclean: clean
 	rm -fr $(NAME)
-
 
 re: fclean all
 

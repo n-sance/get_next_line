@@ -6,7 +6,7 @@
 /*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 17:46:01 by admin             #+#    #+#             */
-/*   Updated: 2019/09/17 17:46:01 by admin            ###   ########.fr       */
+/*   Updated: 2019/09/17 22:12:14 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ static int			ft_check_line(char **stack, char **line)
 	*tmp_stack = '\0';
 	*line = ft_strdup(*stack);
 	*stack = ft_strdup(tmp_stack + 1);
+	free(strchr_stack);
 	return (1);
 }
 
