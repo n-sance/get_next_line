@@ -6,7 +6,7 @@
 /*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 17:46:01 by admin             #+#    #+#             */
-/*   Updated: 2019/09/17 22:12:14 by admin            ###   ########.fr       */
+/*   Updated: 2019/09/18 13:56:23 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,19 @@
 static int			ft_check_line(char **stack, char **line)
 {
 	char			*tmp_stack;
-	char			*strchr_stack;
+	char			*tmp;
 	int				i;
 
 	i = 0;
-	strchr_stack = *stack;
-	while (strchr_stack[i] != '\n')
-		if (!strchr_stack[i++])
+	tmp = *stack;
+	while (tmp[i] != '\n')
+		if (!tmp[i++])
 			return (0);
-	tmp_stack = &strchr_stack[i];
+	tmp_stack = &tmp[i];
 	*tmp_stack = '\0';
 	*line = ft_strdup(*stack);
 	*stack = ft_strdup(tmp_stack + 1);
-	free(strchr_stack);
+	free(tmp);
 	return (1);
 }
 
@@ -56,22 +56,21 @@ static	int			ft_read_from_file(int fd, char *heap, char **stack, char **line)
 
 int					get_next_line(int const fd, char **line)
 {
-	static char		*stack[MAX_FD];
-	char			*heap;
 	int				ret;
 	int				i;
+	static char		*stack[MAX_FD];
+	char			*buff;
 
 	if (!line || (fd < 0 || fd >= MAX_FD) || (read(fd, stack[fd], 0) < 0) \
-		|| !(heap = (char *)malloc(sizeof(char) * BUFF_SIZE + 1)))
+		|| !(buff = (char *)malloc(sizeof(char) * BUFF_SIZE + 1)))
 		return (-1);
 	if (stack[fd])
 		if (ft_check_line(&stack[fd], line))
 			return (1);
 	i = 0;
-	while (i < BUFF_SIZE)
-		heap[i++] = '\0';
-	ret = ft_read_from_file(fd, heap, &stack[fd], line);
-	free(heap);
+	ft_bzero(buff, BUFF_SIZE);
+	ret = ft_read_from_file(fd, buff, &stack[fd], line);
+	free(buff);
 	if (ret != 0 || stack[fd] == NULL || stack[fd][0] == '\0')
 	{
 		if (!ret && *line)
